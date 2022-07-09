@@ -14,87 +14,32 @@
     <link rel="icon" href="img/favicon.ico">
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- JS -->
-    <script src="js/script.js"></script>
+    
 </head>
 <body>
     <header>
         <h1>My Notepad</h1>
-        <nav class="navbar">
-            <!-- dropdown lists, file, edit, selection, view, help -->
-
-            <ul class="main-menu-list">
-                <li>
-                    <!-- dropdown list -->
-                    <div class="dropdown">
-                        <button class="dropbtn">File</button>
-                        <div class="dropdown-content">
-                            <a href="#">New</a>
-                            <a href="#">Open</a>
-                            <a href="#">Save</a>
-                            <a href="#">Save As</a>
-                            <a href="#">Close</a>
-                            <a href="#">Exit</a>
-                        </div>
-                    </div>
-                    
-                </li>
-                <li>
-                    <!-- dropdown list -->
-                    <div class="dropdown">
-                        <button class="dropbtn">Edit</button>
-                        <div class="dropdown-content">
-                            <a href="#">Undo</a>
-                            <a href="#">Redo</a>
-                            <a href="#">Cut</a>
-                            <a href="#">Copy</a>
-                            <a href="#">Paste</a>
-                            <a href="#">Find</a>
-                            <a href="#">Replace</a>
-                            <a href="#">Select All</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <!-- dropdown list -->
-                    <div class="dropdown">
-                        <button class="dropbtn">Selection</button>
-                        <div class="dropdown-content">
-                            <a href="#">Find</a>
-                            <a href="#">Replace</a>
-                            <a href="#">Select All</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <!-- dropdown list -->
-                    <div class="dropdown">
-                        <button class="dropbtn">View</button>
-                        <div class="dropdown-content">
-                            <a href="#">Status Bar</a>
-                            <a href="#">Tool Bar</a>
-                            <a href="#">Full Screen</a>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <!-- dropdown list -->
-                    <div class="dropdown">
-                        <button class="dropbtn">Help</button>
-                        <div class="dropdown-content">
-                            <a href="#">Help</a>
-                            <a href="#">About</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+       
     </header>
     <main>
         <div class="container">
             <div class="text-editor">
-                <textarea id="text-editor"></textarea>
+                <!-- file name input -->
+                <div class="file-name-input">
+                    <!-- label -->
+                    <label for="file-name-input">File Name</label>
+                    <input id="fileNameToSaveAs" type="text" placeholder="Untitled">
+                </div>
+
+                <textarea id="textToWrite" ></textarea>
+                <!--button save as txt file -->
+                <button id="save-txt-btn" onclick="saveTextAsFile()">Save as txt<button>
+                <!--button save as html file -->
+                
+
             </div>
         </div>
+        <!-- JS -->
+    <script src="./script.js"></script>
 </body>
 </html>
