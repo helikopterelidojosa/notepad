@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My NotePAD</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./style.css">
     <!-- FONT -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <!-- FAVICON -->
@@ -37,47 +37,56 @@
                             <a href="#">Exit</a>
                         </div>
                     </div>
-                    <!-- css for dropdown list -->
-                    <style>
-                        .dropdown {
-                            position: relative;
-                            display: inline-block;
-                        }
-
-                        .dropdown-content {
-                            display: none;
-                            position: absolute;
-                            background-color: #f1f1f1;
-                            min-width: 160px;
-                            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                            z-index: 1;
-                        }
-
-                        .dropdown-content a {
-                            color: black;
-                            padding: 12px 16px;
-                            text-decoration: none;
-                            display: block;
-                        }
-
-                        .dropdown-content a:hover {background-color: #ddd;}
-
-                        .dropdown:hover .dropdown-content {display: block;}
-                        .dropdown:hover .dropbtn {background-color: #3e8e41;}
-                    </style>
-                    <!-- javascript for dropdown list -->
-                    <script>
-                        $(document).ready(function(){
-                            $(".dropdown").click(function(){
-                                $(".dropdown-content").slideToggle("slow");
-                            });
-                        });
-                    </script>
+                    
                 </li>
-                <li><a href="index.html">Edit</a></li>
-                <li><a href="index.html">Selection</a></li>
-                <li><a href="index.html">View</a></li>
-                <li><a href="index.html">Help</a></li>
+                <li>
+                    <!-- dropdown list -->
+                    <div class="dropdown">
+                        <button class="dropbtn">Edit</button>
+                        <div class="dropdown-content">
+                            <a href="#">Undo</a>
+                            <a href="#">Redo</a>
+                            <a href="#">Cut</a>
+                            <a href="#">Copy</a>
+                            <a href="#">Paste</a>
+                            <a href="#">Find</a>
+                            <a href="#">Replace</a>
+                            <a href="#">Select All</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!-- dropdown list -->
+                    <div class="dropdown">
+                        <button class="dropbtn">Selection</button>
+                        <div class="dropdown-content">
+                            <a href="#">Find</a>
+                            <a href="#">Replace</a>
+                            <a href="#">Select All</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!-- dropdown list -->
+                    <div class="dropdown">
+                        <button class="dropbtn">View</button>
+                        <div class="dropdown-content">
+                            <a href="#">Status Bar</a>
+                            <a href="#">Tool Bar</a>
+                            <a href="#">Full Screen</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <!-- dropdown list -->
+                    <div class="dropdown">
+                        <button class="dropbtn">Help</button>
+                        <div class="dropdown-content">
+                            <a href="#">Help</a>
+                            <a href="#">About</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
