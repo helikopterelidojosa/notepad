@@ -22,23 +22,20 @@
        
     </header>
     <main>
-        <div class="container">
+        
             <div class="text-editor">
-                <!-- file name input -->
-                <div class="file-name-input">
-                    <!-- label -->
+                <div class="file-save">
+                    <h5> *you can add any file type in the end, txt, html, css, js, md </h5>
                     <label for="file-name-input">File Name</label>
-                    <input id="fileNameToSaveAs" type="text" placeholder="Untitled">
+                    <input id="fileNameToSaveAs" type="text" value="my-note">
+                    <!-- button save as txt file -->
+                <button id="save-txt-btn" onclick="saveTextAsFile()">Save as file</button>
                 </div>
 
-                <textarea id="textToWrite" ></textarea>
-                <!--button save as txt file -->
-                <button id="save-txt-btn" onclick="saveTextAsFile()">Save as txt<button>
-                <!--button save as html file -->
+                <textarea id="textToWrite" placeholder="write everything here..."></textarea>
                 
-
             </div>
-        </div>
+        
         <!-- JS -->
     <script src="./script.js"></script>
 </body>
