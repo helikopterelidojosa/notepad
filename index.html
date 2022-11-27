@@ -30,7 +30,29 @@
                     <input id="fileNameToSaveAs" type="text" value="my-note">
                     <!-- button save as txt file -->
                 <button id="save-txt-btn" onclick="saveTextAsFile()">Save as file</button>
-                </div>
+                
+            <div>
+                
+                <br>
+    <button onclick='document.getElementById("textToWrite").value +="#&#35";'>&#35;</button>
+    <button onclick='document.getElementById("textToWrite").value += `"`;'>"</button>
+    <button onclick='document.getElementById("textToWrite").value += "&#61;" ;'>&#61;</button>
+    <button onclick='document.getElementById("textToWrite").value += "&#39;" ;'>'</button>
+    <button onclick='document.getElementById("textToWrite").value += "&#37;" ;'>%</button>
+
+    <!-- braces -->
+    <button onclick='document.getElementById("textToWrite").value += "&#40;" ;'>(</button>
+    <button onclick='document.getElementById("textToWrite").value += "&#41;" ;'>)</button>
+    <button onclick='document.getElementById("textToWrite").value += "&#123;" ;'>{</button>
+    <button onclick='document.getElementById("textToWrite").value += "&#125;" ;'>}</button>
+    <button onclick='document.getElementById("textToWrite").value += "&#91;" ;'>[</button>
+    <button onclick='document.getElementById("textToWrite").value += "&#93;" ;'>]</button>
+    <button onclick='document.getElementById("textToWrite").value += "&#58;" ;'>:</button>
+    <button onclick='document.getElementById("textToWrite").value += "&#59;" ;'>;</button>
+    <button onclick='document.getElementById("textToWrite").value += "&#60;" ;'>&#60;</button>
+    <button onclick='document.getElementById("textToWrite").value += "&#62;" ;'>&#62;</button>
+            </div>
+            </div>
 
                 <textarea id="textToWrite" placeholder="write everything here..."></textarea>
                 
